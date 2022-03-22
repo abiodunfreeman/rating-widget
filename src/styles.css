@@ -46,7 +46,7 @@ p {
   background-color: hsl(213, 19%, 25%);
   border-radius: 50%;
   width: 40px;
-  height: 40px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,4 +78,22 @@ p {
 .clicked {
   background-color: hsl(217, 12%, 63%);
   color: white;
+}
+.thanks {
+  align-items: center;
+}
+.thanks > p:first-of-type {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 25%);
+  padding: 8px;
+  border-radius: 40px;
+  text-align: center;
+}
+#thanks-img {
+  width: 150px;
+  align-self: center;
+}
+.thanks-msg {
+  text-align: center;
+  line-height: 160%;
 }
