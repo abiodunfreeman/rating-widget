@@ -38,6 +38,6 @@ I learned that css is kinda hard. Definelty a good idea to make a layout beforeh
 
 ## Author
 
-- Website - [Add your name here](https://github.com/bornduringwar)
+- Website - [Odun Freeman](https://github.com/bornduringwar)
 
 - Twitter - [@bornduringwar](https://www.twitter.com/bornduringwar)
