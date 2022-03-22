@@ -1,28 +1,14 @@
-import { useEffect, useState } from "react";
+import "./styles.css";
+export default function Review(props) {
+  const { userSetRating } = props;
 
-export default function Review() {
-  const [rating, setRating] = useState(); //inits rating state
-  function userSetRating(rating) {
-    // sets rating and adds class of 'clicked' to chosen rating
-    const ratingChoices = [...document.querySelectorAll(".clicked")];
-    ratingChoices.forEach((rating) => {
-      //removes 'clicked' class to anything that has it
-      rating.classList.remove("clicked");
-    });
-    const target = document.getElementById(rating); // adds 'clicked' class to chosen rating
-    target.classList.add("clicked");
-    setRating(rating); // sets rating state
-  }
-  useEffect(() => {
-    console.log(rating);
-  }, [rating]);
   return (
     <div className="review">
       <div>
-        <img alt="star" src="./images/icon-star.svg" />
+        <img id="star" alt="star" src="./images/icon-star.svg" />
       </div>
       <h1>How did we do?</h1>
-      <p>
+      <p className="desc">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering !
       </p>
@@ -43,7 +29,9 @@ export default function Review() {
           5
         </p>
       </section>
-      <div className="submit">SUBMIT</div>
+      <div onClick={() => props.displayThanks()} className="submit">
+        SUBMIT
+      </div>
     </div>
   );
 }
